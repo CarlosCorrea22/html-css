@@ -4,12 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamento</title>
+    <title>Alinhamento Vertical</title>
     <style>
-        body {
-            height: 98vh;
-            background-image: url('imagens/wallpaper003.jpg');
-            background-position: center center;
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            
         }
 
         div.f {
@@ -41,10 +59,14 @@
     </style>
 </head>
 <body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
     <div class="f">
         <footer>
-            <a href="fundo004.html">prev</a>
-            <a href="fundo006.html">next</a>
+            <a href="fundo006.html">prev</a>
         </footer>
     </div>
 </body>
